@@ -1,0 +1,73 @@
+<header class="header_area">
+    <!-- Top Header Area Start -->
+    <div class="top_header_area">
+        <div class="container" style="vertical-align: middle;">
+            <div class="row">
+                <div class="col-md">
+                    <!--  Top Quote Area Start -->
+                    <div class="" style="margin-top: 12px;">
+                        <p style="color:white">Welcome to E-Learning Platform</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-md" ng-controller="login_ctrl">
+                    <div class="login_language_area d-flex float-right" style="margin-top: 7px;">
+                        <!-- Login Register Area Start -->
+                        <div class="login_register" ng-hide="displayin">
+                            <button id="lag" type="button" class="btn btn-info waves-effect">
+                                <a href="http://localhost:8580/login"><i class="fa fa-lock" aria-hidden="true"></i> Login/Register</a>
+                            </button>
+                        </div>
+                        <div class="login_register" ng-hide="displayout">
+                            <button id="lag" type="button" class="btn btn-info waves-effect" ng-click="logout()">
+                                <i class="fa fa-lock" aria-hidden="true"></i> Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Header Area Start -->
+    <div class="main_header_area animated">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="educampNav">
+
+                    <!-- Logo -->
+                    <a class="nav-brand" href="/">E-Learning App</a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- close btn -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <!-- <ul>
+                                <li class="current_page_item"><a href="/">Home</a></li>
+                                <li><a href="/course">Course</a></li>
+                            </ul> -->
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/course">Course</a></li>
+                                <li ng-hide="displayout"><a href="/my_learning">My learning</a></li>
+                                <li ng-hide="displayout"><a href="/favourites">Favourites</a></li>
+                                <li ng-hide="displayout"><a href="/my_profile">My profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
